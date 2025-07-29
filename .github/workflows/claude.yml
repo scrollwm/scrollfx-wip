@@ -1,37 +1,31 @@
-name: Claude Code ScrollFX
+name: Claude Code Assistant
 
 on:
-  issues:
-    types: [opened, assigned]
   issue_comment:
     types: [created]
-
+  issues:
+    types: [opened, assigned]
+    
 jobs:
-  claude:
+  claude-assist:
     if: |
-      (github.event_name == 'issues' && contains(github.event.issue.title, '[Claude]')) ||
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude'))
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'issues' && 
+        (contains(github.event.issue.body, '@claude') || 
+         github.event.issue.assignee.login == 'claude'))
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
       issues: write
-      id-token: write  # REQUIRED for OIDC authentication
+      id-token: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Run Claude Code
-        uses: anthropics/claude-code-action@beta
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@main
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          mode: agent
-          max_turns: 30
-          model: claude-opus-4-20250514
           custom_instructions: |
-            You are working on ScrollFX, which combines Scroll window manager with SceneFX cosmetic features.
+                        You are working on ScrollFX, which combines Scroll window manager with SceneFX cosmetic features.
             
             IMPORTANT: Always check CLAUDE.md for project context and guidelines.
             
@@ -42,4 +36,3 @@ jobs:
             4. Use investigation-*.md files for understanding integration patterns
             
             When analyzing code, be precise about which files and directories to examine.
-          allowed_tools: "str_replace_editor,create_file,edit_file,view_file,list_files,bash,git"
