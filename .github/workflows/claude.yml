@@ -16,6 +16,7 @@ jobs:
       contents: write
       pull-requests: write
       issues: write
+      id-token: write  # REQUIRED for OIDC authentication
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,12 +24,12 @@ jobs:
           fetch-depth: 0
 
       - name: Run Claude Code
-        uses: anthropics/claude-code-action@main
+        uses: anthropics/claude-code-action@beta
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           mode: agent
           max_turns: 30
-          model: claude-3-5-sonnet-20241022
+          model: claude-opus-4-20250514
           custom_instructions: |
             You are working on ScrollFX, which combines Scroll window manager with SceneFX cosmetic features.
             
