@@ -24,6 +24,7 @@ jobs:
       - uses: anthropics/claude-code-action@main
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "str_replace_editor,create_file,edit_file,view_file,list_files,bash,git"
           custom_instructions: |
             You are working on ScrollFX, which combines Scroll window manager with SceneFX cosmetic features.
             
