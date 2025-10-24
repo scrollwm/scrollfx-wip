@@ -1,0 +1,8 @@
+5e6501cd0682273f252fd422256c1dd626205770|dawsers|2025-10-22|Improve buffer rendering by matching dst_size and src_box better with the texture size
+de1720127dfd7d9eefd44383b3c38cebb132db68|dawsers|2025-09-27|output: add _exact_ parameter to scale for better rendering of content
+872d9a45922c8cb588b34ad7644ed2347f11f851|dawsers|2025-09-13|Improve mapping buffer sizes to on screen rendering destination sizes to be exact when workspace scale is 1
+32cb72640aa318a7005b8fa7d5ff27e262ce9cfa|dawsers|2025-08-31|Simplify and fix small issues by calling surface_reconfigure to recreate buffers for animation steps and workspace scaling
+e50b16a69969d136595efe2b595cf55c9cef39fb|Fenveireth|2025-07-20|tree/view: save new wlr_scene_buffer fields
+fd4a7e522c99b03c3185366448be760d3aa5affb|dawsers|2025-07-18|jump workspaces: Background needs to have its render region reset, or it will show opaque regions from the real workspace, outside of the virtual workspaces when rendering
+c2f08075ec00632293bbc63582c7f3ffd75441af|Simon Ser|2025-06-23|tree/view: send event unconditionally in view_send_frame_done()
+eb8acfd7b1cd0eeab75fe699e6aa0751150e80a2|Simon Ser|2025-06-05|Stop using wlr_scene_buffer_send_frame_done()

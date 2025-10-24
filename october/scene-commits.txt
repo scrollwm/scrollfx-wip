@@ -1,0 +1,22 @@
+fe6254d6230b341444e3c2fd81f7485afd2fd832|dawsers|2025-10-20|scene: update_node_update_outputs() use node info for tiled containers (#98)
+9911f290b5e7aeca0ebc33d662e30fe32d8a2e5c|dawsers|2025-10-19|scene: update to latest wlroots changes 989cffe70d32db9fc2b5a776abd4767aabe430f6
+41439555dfd69e29c0ef4d5c594967229f7503b7|dawsers|2025-10-05|scene: update to latest wlroots changes 5529aae3e65aa182d88cecc1efa4b10a20b553eb
+6fec10b56514b2bf966fa5c92d79d1460ba36b04|dawsers|2025-10-04|scene: update to latest wlroots changes d8fb7adcf041af7e958804b77c9a6669fbff4efd
+9e95a44e943ca5ae77e739b9d55d7b9dec35858e|dawsers|2025-10-03|scene: update to latest wlroots changes 6978509f64a729984998c92301fdf83d6da7e4e1
+71c41aa65d40e74ca7dc2b72ccce4afde614f7d7|dawsers|2025-10-02|scene: update to latest wlroots changes 22528542970687720556035790212df8d9bb30bb
+87598cc88d528595dcdb4f22580ae18a829c5d0c|dawsers|2025-09-25|scene: remove unnecessary duplicated function and use wlroots's
+ebf6ce8c33af1e58b40b12b14eedd9d38959deda|dawsers|2025-09-25|scene: fix visible region free/alloc leak
+e1894e5b256efc737b9765e70310c2f962e145cd|dawsers|2025-09-25|scene: fix function name from previous automatic merge to scroll's fork of wlr_scene
+d9e615c507c1d669171e8222ef8b32bf8de07ed5|llyyr|2025-09-21|sway/server: set color_manager for root scene
+33bc98a9268e1b5d0df2f74cf4e2b52a38cad3fe|dawsers|2025-09-23|scene: update to latest wlroots changes 7cb3393e75667ca349287ad70aef3f7e2d008ec6
+b75a6e10c942dc1eeb748f091fe6bb917ddc94be|dawsers|2025-07-24|scene: update to latest wlroots changes 2f2c0dfcc63e68915eaf01e5a89408ecc2c9443b
+e50b16a69969d136595efe2b595cf55c9cef39fb|Fenveireth|2025-07-20|tree/view: save new wlr_scene_buffer fields
+28258e731954fbac151666e2fcb64075ac147137|dawsers|2025-07-19|Add sway_scene_node_info to store all the information we may need about scene_node while querying/manipulating the scene
+f599f10519f72ea1368218c9ccb7413a851d0efb|dawsers|2025-07-04|scene: update to latest wlroots changes 31b78a4f3afe86b0406bcde89ca8db1b5f338d85
+fce186ed73e1d098eb29f3a913950c1f5256e253|dawsers|2025-07-02|scene: update to latest wlroots changes 58c3680d96bffa1b8f59c274050a6ecfa27e7c23
+2a9d4984a6826152c1c01237a25791f3faa37d99|dawsers|2025-06-26|scene: update to latest wlroots changes 8c7041c4e842c9fb029a6371eb53f73aa98e7b31
+1c1627fa78feda44c9911fd13bd0c4deee553452|dawsers|2025-06-24|cursor: node_at_coords() verify cursor is inside container to avoid sway_scene_node_at() false positives #31
+c2f08075ec00632293bbc63582c7f3ffd75441af|Simon Ser|2025-06-23|tree/view: send event unconditionally in view_send_frame_done()
+c8bafa57b52c7507ce515b23a1e2a581632cc776|dawsers|2025-06-19|scene: update to latest wlroots changes 0c272a38423679e980d4cd39affc202fd48c0f6d
+eb8acfd7b1cd0eeab75fe699e6aa0751150e80a2|Simon Ser|2025-06-05|Stop using wlr_scene_buffer_send_frame_done()
+10ab73a35259bd3b856d0f61f85b89236f4736b4|dawsers|2025-06-16|scene: update to latest wlroots changes

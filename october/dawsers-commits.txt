@@ -1,0 +1,172 @@
+fbfe717f7b4d98a19acca7b381e73c955ef818d2|dawsers|2025-10-23|xwayland_output_scale: fix missing unmanaged_handle_set_geometry() (#102)
+af406e149f520a5dee262601003639438de3a163|dawsers|2025-10-23|resize: disable animations for resize grow/shrink to prevent spamming the animation system when they bound key is kept pressed (#104)
+cc5f3988be743629cb19d9ed193cc45726cafcaa|dawsers|2025-10-22|scratchpad: early exit in scratchpad_hide_focused() so we don't hide the focused container when it is the one we are toggling
+c649e7bb03546ee75a68735467f4a27b289afd25|dawsers|2025-10-22|workspace: workspace_switch() cancel animation if another transaction happens (#105)
+c60342cd0b6d12a1bf9835e5a4ffe0ac3782862c|dawsers|2025-10-22|resize: allow resizing to maximum size by clamping resize try (#101)
+ded31ac39662044facf276a984cf0b07369d6cee|dawsers|2025-10-22|output: remove _exact_ option, as it is no longer needed. Change message for non-recommended fractional scales
+5e6501cd0682273f252fd422256c1dd626205770|dawsers|2025-10-22|Improve buffer rendering by matching dst_size and src_box better with the texture size
+fe6254d6230b341444e3c2fd81f7485afd2fd832|dawsers|2025-10-20|scene: update_node_update_outputs() use node info for tiled containers (#98)
+bcce858eb7b05b220b8637e72835689fbdadddcb|dawsers|2025-10-19|fullscreen: fix some logic regarding overview/jump modes, fullscreen_movefocus (#100) and others
+d00dad102d7a2b10b8a21f3553788028bbe357b3|dawsers|2025-10-19|ipc: avoid possible infinite loop
+9911f290b5e7aeca0ebc33d662e30fe32d8a2e5c|dawsers|2025-10-19|scene: update to latest wlroots changes 989cffe70d32db9fc2b5a776abd4767aabe430f6
+a34a120ac106dacc5b85cd074efed8406c675ea4|dawsers|2025-10-19|Merge remote-tracking branch 'upstream/master'
+aded1a5f56594e52391c3f84b66eee57d6de3b3f|dawsers|2025-10-19|animation: add _simple_ argument to _var_ animation curves for compatibility with curves for other compositors and CSS
+ef8d89a31b9b7ffde665c98679fda2973ad5ac3b|dawsers|2025-10-17|Disable center_horizontal/vertical and reorder lazy in overview/jump modes
+b93800d015d3a41f9a5e3c7351f8af44d12da6ca|dawsers|2025-10-08|xdg_output protocol: fix wrong assumption, make details query adapt instead of marking the output xwayland (#96)
+b192a7e7b7e3b4f8f5aea40fefe51847749cfa31|dawsers|2025-10-05|Merge remote-tracking branch 'upstream/master'
+41439555dfd69e29c0ef4d5c594967229f7503b7|dawsers|2025-10-05|scene: update to latest wlroots changes 5529aae3e65aa182d88cecc1efa4b10a20b553eb
+6fec10b56514b2bf966fa5c92d79d1460ba36b04|dawsers|2025-10-04|scene: update to latest wlroots changes d8fb7adcf041af7e958804b77c9a6669fbff4efd
+e5fbdbb491ce3dc3541d840b3a3b4cfa60d2b354|dawsers|2025-10-03|Merge remote-tracking branch 'upstream/master'
+9e95a44e943ca5ae77e739b9d55d7b9dec35858e|dawsers|2025-10-03|scene: update to latest wlroots changes 6978509f64a729984998c92301fdf83d6da7e4e1
+f6aeea9ed1d24d219af7295bae20380403a60d4f|dawsers|2025-10-02|output: update manual section of scale's _force_ and _exact_
+71c41aa65d40e74ca7dc2b72ccce4afde614f7d7|dawsers|2025-10-02|scene: update to latest wlroots changes 22528542970687720556035790212df8d9bb30bb
+97a4bda93483d6953f9366534b33ef538d2d6fef|dawsers|2025-09-29|transaction: don't arrange disabled outputs (fix possible crash while reloading the configuration (changes in outputs) #92)
+fdab5e0779cb775ca8ae18ab02b7ec573172b47a|dawsers|2025-09-29|output: support _exact_ parameter in subsurfaces
+e61a3ebde151a6ef34a0eaf393c257e09839dc55|dawsers|2025-09-28|output: fix scale command parsing for cases where the whole output configuration is in one line
+de1720127dfd7d9eefd44383b3c38cebb132db68|dawsers|2025-09-27|output: add _exact_ parameter to scale for better rendering of content
+87598cc88d528595dcdb4f22580ae18a829c5d0c|dawsers|2025-09-25|scene: remove unnecessary duplicated function and use wlroots's
+ebf6ce8c33af1e58b40b12b14eedd9d38959deda|dawsers|2025-09-25|scene: fix visible region free/alloc leak
+6dac13b482a3a2d470ab82220def3617167074b0|dawsers|2025-09-25|output: automatic setting (with warning) of fractional scale values and _force_ to disable it
+e1894e5b256efc737b9765e70310c2f962e145cd|dawsers|2025-09-25|scene: fix function name from previous automatic merge to scroll's fork of wlr_scene
+769ff7442e606248f3e9a409b3dd2400bd59c3c8|dawsers|2025-09-25|Merge remote-tracking branch 'upstream/master'
+33bc98a9268e1b5d0df2f74cf4e2b52a38cad3fe|dawsers|2025-09-23|scene: update to latest wlroots changes 7cb3393e75667ca349287ad70aef3f7e2d008ec6
+40e7d00914d94be209c242369a6c05a713950224|dawsers|2025-09-23|Merge remote-tracking branch 'upstream/master'
+3dfde035b60f798a8d223e8742f877b391230497|dawsers|2025-09-17|build: fix build when xwayland is disabled
+0324f484e166328518567e0a30b8d631a7e6ff9e|dawsers|2025-09-16|config: change and document some defaults
+eea61705b5a1e9a914fad7e77dab0adaa36fd5ba|dawsers|2025-09-16|options: xdg_activation_force to allow focus activation when clients don't implement the full protocol (#66)
+4738bdc7b323269b765099af13e81d064a7d4a8a|dawsers|2025-09-15|Merge remote-tracking branch 'upstream/master'
+201702a8ca4e8231ba618af6f2ba32e93e729e2b|dawsers|2025-09-14|check there is content before trying to clip view
+3dcfb8508e21e2e5295e4e58d6c87867ffa84329|dawsers|2025-09-14|configuration: add xwayland_output_scale option to disable fractional scaling in XWayland windows. Fix X popups without a known parent
+4a326ad661b77d68dbaaf9339528ab352e745677|dawsers|2025-09-13|commands: disable fullscreen_movefocus when moving to a different workspace
+59427a69c5409d58abed24a17790756c3ad23eec|dawsers|2025-09-13|commands: fix move to workspace bug when the container is full screen or in the scratchpad
+7332dbb8993da90501d6e01fde9ac59d5ef95bad|dawsers|2025-09-13|Remove README.sr.md
+613c1516d3996ef1da7b711f9696638ca1e5e857|dawsers|2025-09-13|Merge remote-tracking branch 'upstream/master'
+872d9a45922c8cb588b34ad7644ed2347f11f851|dawsers|2025-09-13|Improve mapping buffer sizes to on screen rendering destination sizes to be exact when workspace scale is 1
+7a7f0d2b35c8b19fd02f8802871a2525261afd86|dawsers|2025-09-11|Following wlroots surface_reconfigure() changes
+5b27d399e659f771a54d951b8b2dbd755bd44461|dawsers|2025-09-11|Merge remote-tracking branch 'upstream/master'
+1c632e76c6886295783ff5a0c28dc012a648b8cb|dawsers|2025-09-08|Small fixes to be able to statically link wlroots, and put logic of increment scale content into view.c
+3539983c168ae8ea703cf435c25ce95107001e60|dawsers|2025-09-10|Merge remote-tracking branch 'upstream/master'
+fea95f82e7cece1e437060e97c822a3bc539a1cf|dawsers|2025-09-08|Merge remote-tracking branch 'upstream/master'
+4810f2cf15fa8f67e96eccd674743076d0d8eec0|dawsers|2025-09-07|Check for view->container while reconfiguring views (#86)
+d47b263e2eef772aa4cedee08f410e0c913cc7dc|dawsers|2025-09-06|Trais: make active default 0 and check for list lengths instead for clearer IPC messages
+b92209e36f1b5b90902731115105cc912ea5e81e|dawsers|2025-09-05|Trais: add _number_ argument to be able to switch quickly and favor the new trail based workflow with trailmark jump
+fc8f9160b5db35e78dcaf211e7aab9dad1fe4c2e|dawsers|2025-09-05|Updated TUTORIAL.md
+c9eddf228e8397ecdd022e286470432f4baafe59|dawsers|2025-09-04|Update video in README.md
+5c114040a779d7c3b2929e6061d6147bbece5425|dawsers|2025-09-04|scrollnag: center all buttons below the text
+8b51bc588028afa8c7d1accc10feeec653930e32|dawsers|2025-09-04|scrollnag: add new options edge: center and width: size, to be able to display messages at the center of the screen
+8e2886b8cfc4d937c877bcd1b1849cc8ac3a6716|dawsers|2025-09-03|Trailmarks: add jump mode. New workflow: toggle trailmarks and use jump to quickly navigate any window in any workspace
+c12ff9422f44fd8ca4e9e84a1ad68c66b24be699|dawsers|2025-09-01|jump floating: fix after changes to floating windows positioning in overview
+92ceebb99271d19db79f5d071cafd3d6517c9252|dawsers|2025-09-01|XWayland: support workspace and content scaling
+b27af7c3bcdaa650ff3952069b335ee1b21cfb42|dawsers|2025-09-01|Merge pull request #84 from TwoF1nger/typo
+32cb72640aa318a7005b8fa7d5ff27e262ce9cfa|dawsers|2025-08-31|Simplify and fix small issues by calling surface_reconfigure to recreate buffers for animation steps and workspace scaling
+a175f72e4edd0eb4ee494449c0479d67d41a1b94|dawsers|2025-08-30|Fix crash when animations are active and the config is reloaded many times in a quick succession (#81)
+86f88195f74240c73a9b63d088212e19b22c1847|dawsers|2025-08-26|Change how floating windows work in scaled workspaces, and fix node detection in that case
+86002ea393679fded42d69ec48f67e20a0c8ffee|dawsers|2025-08-25|Change logic of toggle_size and maximize_if_single to work more intuitively (#79)
+8107b3cbd595ce6b7b16d39aeeb30af0ae1e5758|dawsers|2025-08-25|Merge remote-tracking branch 'upstream/master'
+316678175adde4ed52928f4bda3d53790c9bb4b4|dawsers|2025-08-22|Fix jump_workspaces bug when container was in full screen mode (#80)
+ef19b56820e14156f4d896bcd465153986f9f291|dawsers|2025-08-22|option: fullscreen_movefocus nofollow argument
+698a7d7fca2a24c346081ff984bbbd87f3c75b89|dawsers|2025-08-21|Disable animations while reloading configuration to avoid possible access to curves being created
+aec902be3dbb3d2b02caab44dfa801153b2aa9b1|dawsers|2025-08-21|Fullscreen containers shouldn't be workspace scaled (#77)
+7639e9cded36550d6fe8cf21ffd555d34e147488|dawsers|2025-08-21|Avoid infinite loop in array parsing (#72)
+02d637840c2628704d4ef382e13dd63d55b1edc8|dawsers|2025-08-21|workspace animations: implement workspace_switch animation and rework animation system (#63)
+18783f39bdd96e24d0edaa3c8ed99226b5443354|dawsers|2025-08-17|options: add workspace_next_on_output_create_empty, default _true_
+e0813abdfd580325be0c7b337d2fb7cc1b4b18d0|dawsers|2025-08-17|animations: Fix floating windows when style is scale
+09dc6a6aa97698eb1093d9c48b501511786d79c3|dawsers|2025-08-16|animations: Fix fullscreen mode when style is scale (#74)
+13f09e1fc107acce7585415b993067e77fda5e57|dawsers|2025-08-16|animations: add _style_ subcommand for scaled or clipped animations (fixed)
+3ebf501bc4b8a1a3183567eb252ab9077ac198a0|dawsers|2025-08-16|animations: Fix clip container for the different types of borders
+8d2719a1940485069da7641566f2ce10350a5e3f|dawsers|2025-08-15|animations: revert add _style_ subcommand until it's completely ready
+78ab1020bc27a694b63dfb95c28bbb1c8c5f7284|dawsers|2025-08-15|Fix some roundings that would show on scaled workspaces
+545afa2bd00e2cb05fa8e12a2d04fcfe5abc518a|dawsers|2025-08-15|animations: add _style_ subcommand for scaled or clipped animations
+a0527d8e435f8b9ca86fc84195c9d3e1014d2987|dawsers|2025-08-15|manual: correct array definition. An array separates its numbers with spaces, not commas
+bf75a2a7e544d02142e4150ccd073ea8bc2aeb8f|dawsers|2025-08-14|Merge pull request #69 from TwoF1nger/replace-sway-with-scroll
+864ac5cd223b704c9f9e1005498420974e46cb60|dawsers|2025-08-14|Merge branch 'master' of https://github.com/swaywm/sway
+d5e585f46ae563b7e5bcca1e9d93858361feea8b|dawsers|2025-08-13|Fix subsurface clipping when scaling content/workspace (#39), and cleanup
+ba6431b358bdef9d4c6bca750449f564b8ec3403|dawsers|2025-08-12|toggle_size: add the _this_ modeless argument that affects only the current container
+880ae292c3aea1d1d319b8b75f688f84c1527dc0|dawsers|2025-08-10|focus_follows_mouse: add _full_ option to only change focus if the hovered tiling container is fully in the viewport (#67)
+abc18209b707edd7cdb525b15500b427e471f310|dawsers|2025-08-08|focus: exclusive layer shell may prevent focus from working correctly (#65)
+d14e18c6ec0f9cf43a954b0ab657c53216647d93|dawsers|2025-08-07|configuration command: add cursor_shake_magnify, default false
+762fc738d48ffa9a7d4cb33a4636fb61895abc77|dawsers|2025-08-06|Merge remote-tracking branch 'upstream/master'
+9e0cf89bdc8479ba78472f829987629612f94574|dawsers|2025-08-06|configuration command: add maximize_if_single, default false
+26c743bd770199a38c6524f6434375d5a4d02bbc|dawsers|2025-08-05|commands: Add toggle_size command
+f7179b3dc77b9c035d910c2cb27af5a232d57e98|dawsers|2025-08-01|gestures: focus active child when ending swipe
+26f9fcaa514d61822d95cf53423c2b9f78feaaf9|dawsers|2025-07-31|Merge remote-tracking branch 'upstream/master'
+14b58015a315e4d13553a125dc7cdbf3fb6b159e|dawsers|2025-07-30|cycle_size_wrap: Add this as an option
+08ed5f0e02284d46266848cfbf9c27d44a46726f|dawsers|2025-07-29|Merge remote-tracking branch 'upstream/master'
+b366f73a638f56fe63137f60f443d2322f349746|dawsers|2025-07-29|Rebase cursors after animation to prevent node_at_coords detecting the wrong container when warping cursor (#60)
+ebe555cee94ec7d304661fe92a6f8e7942338db8|dawsers|2025-07-27|Forgot to check for non-focus in 7c5b1af471235f9511355d0e47028555112732bc
+b75a6e10c942dc1eeb748f091fe6bb917ddc94be|dawsers|2025-07-24|scene: update to latest wlroots changes 2f2c0dfcc63e68915eaf01e5a89408ecc2c9443b
+7c5b1af471235f9511355d0e47028555112732bc|dawsers|2025-07-23|mouse_warping: delay warping to end of pending transactions so container's position is known (#33) and warp only happens when requested (#56)
+9c465167cccc8b69456fe0426a58f4d4987d2fda|dawsers|2025-07-23|borders: substract from animation clipping and content resize
+63f7cffbe8a334d0cf1fe96d763a4f5c4d60d272|dawsers|2025-07-22|ipc: geometry rect of containers was not testing whether there is titlebar or not
+3fca8f5c5f1fb08bd53d5b898f38dc523cdaa068|dawsers|2025-07-20|Add width and height fraction to IPC get_tree (#54), and fix container/workspace representation
+d969245a74e39d0164cf69fd5a055ec26289247e|dawsers|2025-07-20|Merge remote-tracking branch 'upstream/master'
+c0fabb78a4dcb0a30a6def99de56e13bda78597b|dawsers|2025-07-20|resize: limit resize to client's notified min, max sizes (#53)
+e8c49833da70cf0ab3d6cbbbec943f2253295572|dawsers|2025-07-20|Fix active offset position when reloading configuration and outpurs are still in an unstable state (#52)
+a3a1e71f02e704b0ace8523c455048ad8dc8b695|dawsers|2025-07-19|lua: add 'scroll.view_mapped(view)' API function
+9a6cf50cd536bc0d370508f8f475d4950362fbc0|dawsers|2025-07-19|jump workspaces: Fix regression after previous change
+28258e731954fbac151666e2fcb64075ac147137|dawsers|2025-07-19|Add sway_scene_node_info to store all the information we may need about scene_node while querying/manipulating the scene
+fd4a7e522c99b03c3185366448be760d3aa5affb|dawsers|2025-07-18|jump workspaces: Background needs to have its render region reset, or it will show opaque regions from the real workspace, outside of the virtual workspaces when rendering
+59c8a4db6ecb033a4f252f1ef44613b61436833a|dawsers|2025-07-18|lua: Add 'view_focus' event to callback list
+cfd2f6f7f8ae7a371f15f613da9785a378359cf9|dawsers|2025-07-18|space: Add support for restoring containers that changed layout type (tiling<->floating)
+c29d21f6bf2b7756a23a59fabaa1e77ff3b05721|dawsers|2025-07-18|Remove free_size as it is not needed any more. Use fractions everywhere
+5a47c04344df1c493f669dd8d4efd0e0e14b0d1e|dawsers|2025-07-17|arrange.c: Fix layout arranging when layer shell changes the workspace usable area and there are containers with free_size = true (#41)
+56ae4406aea707de514b4957505cc24749f4f1d6|dawsers|2025-07-17|resize: it was missing the gaps_inner correction, should fix #41
+f5fa0fad9fc3339250aa6ba07e3fb88457a34061|dawsers|2025-07-17|Fix bugs in resize and move, probably related to #41 (resize)
+ddb3d29b21de5d00afabfd39a76eb4d764e5b179|dawsers|2025-07-17|lua: Add container and workspace get_width and get_height. Fix some small issues in resize
+803287086fd3cc84fcede8a0f49dd2e55832f176|dawsers|2025-07-16|README: Add link to Void Linux template
+6d4317ec9fe677af65693a8602c4b3f9c3645ebb|dawsers|2025-07-16|Fix typos that were preventing musl build
+417777a3f80a1efa4d0ef2e4c7a26716f33bb917|dawsers|2025-07-16|lua: Add view_get_tag()
+d3710f844f89134c2cc646e19160089ed524109c|dawsers|2025-07-16|Merge remote-tracking branch 'upstream/master'
+c30572c96c1a48c8c787b50e8679714ef86c47f4|dawsers|2025-07-16|lua: Add container_get_parent() and container_get_children()
+28004482c6c9c72eaf0f7edf9131a6b06d2c97ba|dawsers|2025-07-15|Bug fixes in lua command() and space
+315866a37455a2fbd66788bf1f9ea814498df0a1|dawsers|2025-07-14|lua: add container_get_id() and fix swap command
+d26b9e73aae04499f0c7dc74fe4edffa5e4380b9|dawsers|2025-07-14|ipc: Add IPC_GET_SPACES to retrieve the existing spaces' names, and -get_spaces to scrollmsg
+437a55f2c9329a47fe56129aca0a634d0f93d711|dawsers|2025-07-14|lua: Update missing docs for some API functions and fix typo
+43a27c2444017a8305f72576aa1827ac8fccf7af|dawsers|2025-07-14|Change references from sway to scroll on some output messages
+78f95db161a51b0c14b8311f145fd7143949273a|dawsers|2025-07-13|Update TUTORIAL.md
+cc93db77414a22f075051598ba924040b55ced55|dawsers|2025-07-13|docs: update TUTORIAL
+30cdc26482a6cb8cd8496c52c855316b5c71d5eb|dawsers|2025-07-13|lua: scroll.command() can receive a workspace as context. Add 'workspace_create' callback. Other minor workspace functions
+4eddc43a999720f170ce86742c45a24abf5eb388|dawsers|2025-07-12|scroll main: change log messages referring sway to scroll
+8c6fe9aaccdb9888badd92d0a9a145b6f3281822|dawsers|2025-07-12|aur: delete package from repo
+276ca64b9728fb9ac63d01bcd97ed61c34c20c25|dawsers|2025-07-12|commands: Add space command
+a4a5ea3a977276c044d40319882777c13e82148d|dawsers|2025-07-10|lua: Improve error checking and reporting
+5938c82c30f5db50855858a9aebc66c16a072c38|dawsers|2025-07-09|lua: Add more API functions, fix full screen for free_size containers
+d34f4157d69f4dffd0a9b02eac093102126da50d|dawsers|2025-07-09|Remove sway's README.xx.md
+8f341b532f1b8825d2878440191a27484bbcd254|dawsers|2025-07-09|Merge remote-tracking branch 'upstream/master'
+b6b44bbc5209cf65df50b267b07946fd96414d46|dawsers|2025-07-09|lua: Add arguments and persistent state to scripts
+64534b8cd30209202172538cb5ca7dc3099479c2|dawsers|2025-07-09|lua: Add scroll.workspace_{get|set}_mode() documentation
+f0e7caffa65a275a3043ee236243ff540f09d89b|dawsers|2025-07-09|lua: Add scroll.workspace_{get|set}_mode()
+82b59db8ed7b426879c9dd8245ab0cdc13c7f4be|dawsers|2025-07-09|Merge remote-tracking branch 'upstream/master'
+561007fdec352b3c5d44862e4ec4c2aa7378a9cd|dawsers|2025-07-08|Merge remote-tracking branch 'upstream/master'
+4373e6a3c40c41beeafbfaef51babe23d916387c|dawsers|2025-07-08|lua: Add scroll.view_get_parent_view(view) to allow swallowing
+856e414614879d568f5ee24e05d2fc382016f07a|dawsers|2025-07-08|cycle_size, fit_size: fix fractions when free_size and child containers. Fix nomode insertion focus
+6a976358c59ff7b3a1396dca1a4ce81891322c3e|dawsers|2025-07-07|lua: Add Lua API and scripting interface
+c2a5944dd3ec14a97761716cbee49a8f1d50f875|dawsers|2025-07-06|mouse_warping: fix #33 apply mouse_warping after transaction is done and containers have the correct positions
+f599f10519f72ea1368218c9ccb7413a851d0efb|dawsers|2025-07-04|scene: update to latest wlroots changes 31b78a4f3afe86b0406bcde89ca8db1b5f338d85
+5b44e573a3bc4bf45438db58cf6eeaaf1486c4e1|dawsers|2025-07-02|Merge remote-tracking branch 'upstream/master'
+fce186ed73e1d098eb29f3a913950c1f5256e253|dawsers|2025-07-02|scene: update to latest wlroots changes 58c3680d96bffa1b8f59c274050a6ecfa27e7c23
+7b0cbe43f3dea72c759dcb46f9005e935bfe1180|dawsers|2025-06-29|Update TUTORIAL.md
+84f62ac8527f238a883eb85cc71c3b973d85403e|dawsers|2025-06-29|Update TUTORIAL.md
+788f973941d85833af3e751798ab361b66109c54|dawsers|2025-06-28|Revert "changes needed after sway/tree: Simplify sway_node teardown"
+16275e37b8a96a4691247a91aeb739da9b273070|dawsers|2025-06-28|Merge remote-tracking branch 'upstream/master'
+a086ac7dea6c5a09e698f294e779ddd3eb41da50|dawsers|2025-06-27|changes needed after sway/tree: Simplify sway_node teardown
+9775338d57f006a076f2c13fa66ddec66af43c82|dawsers|2025-06-27|Merge remote-tracking branch 'upstream/master'
+2a9d4984a6826152c1c01237a25791f3faa37d99|dawsers|2025-06-26|scene: update to latest wlroots changes 8c7041c4e842c9fb029a6371eb53f73aa98e7b31
+1c1627fa78feda44c9911fd13bd0c4deee553452|dawsers|2025-06-24|cursor: node_at_coords() verify cursor is inside container to avoid sway_scene_node_at() false positives #31
+d30fd8bb808cf64913cb2bc2482bf82a78cd527b|dawsers|2025-06-23|Merge remote-tracking branch 'upstream/master'
+80b140e2b03b02dd3e952c838051fc5f3e264df8|dawsers|2025-06-21|commands: Add kill unfocused (for workspace) and kill all (all workspaces and scratchpad)
+c8bafa57b52c7507ce515b23a1e2a581632cc776|dawsers|2025-06-19|scene: update to latest wlroots changes 0c272a38423679e980d4cd39affc202fd48c0f6d
+c544ae96f3fb7003caa80b521aa2657f80280a05|dawsers|2025-06-18|animations: Save animation variables even if workspace is not visible #27
+2e1bf97e8a15038576a893db4d12efef2ea9fdb9|dawsers|2025-06-18|scratchpad: Add scratchpad jump
+f4272c637dd827b1b708412a413f92524fbfca31|dawsers|2025-06-16|Merge remote-tracking branch 'upstream/master'
+10ab73a35259bd3b856d0f61f85b89236f4736b4|dawsers|2025-06-16|scene: update to latest wlroots changes
+2a90887ea4a2487f9aafa4f2f80279f29aba03b0|dawsers|2025-06-15|colors: indicator color now shows where a new window would open
+280970677bd307a980ba94837e0ad7f2317c95bf|dawsers|2025-06-15|README: add link to Fedora copr
+8f9ba8ae41775fd04d1f7bcf964d54d39c403a24|dawsers|2025-06-14|Merge remote-tracking branch 'upstream/master'
+81ec5fe73152652f9ef145e5989c9f1b4c43e3a2|dawsers|2025-06-12|docs: Improvements to the documentation
+d91a2c2732f24cc869a2c45fb3179be57d676aa8|dawsers|2025-06-12|commands: fixes for fullscreen_application client requests
+b6759ef9dfc7e724403e2cf5d16105df68c7390f|dawsers|2025-06-11|commands: add fullscreen_application
+87a57de513f44ae41f86eff18a4bd1f3cf6610ae|dawsers|2025-06-09|Merge remote-tracking branch 'upstream/master'
+7a44b7265efa44df912a9d0605ad7be195281992|dawsers|2025-06-09|Small fixes to README
+ca5e30ab03cf7c2b3aac64474f2046e45f445731|dawsers|2025-06-09|Update development version
+8702a2d559ef73860e902fbc1bddb0efa60eb05d|dawsers|2025-06-09|docs: Update for version 1.11
