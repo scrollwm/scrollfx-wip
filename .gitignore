@@ -1,0 +1,15 @@
+# Temporary analysis artifacts
+scroll-repo/
+
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
