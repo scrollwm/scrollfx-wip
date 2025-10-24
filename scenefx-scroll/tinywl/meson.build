@@ -1,1 +1,0 @@
-# Placeholder to create tinywl directory
